@@ -69,6 +69,8 @@ sudo apt install docker-compose
 ```
 
 ## Add current user to docker group
+> [!NOTE]
+> You may need to do this unless you want to use 'sudo' with every ./bloodhound-cli or docker command.
 
 ```
 sudo usermod -aG docker $USER
