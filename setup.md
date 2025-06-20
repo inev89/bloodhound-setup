@@ -103,6 +103,10 @@ docker compose up -d
 You can create an easy script that will check to see if bloodhound is running and pull up a browser or restart bloodhound. I created this file below and added it to `/home/kali/.local/bin` so you can just type in bloodhound. Make sure to delete your bash cache by running `hash -r`
 
 ```
+vim /home/kali/.local/bin/bloodhound
+```
+
+```
 if docker ps --format '{{.Names}}' | grep -q "bloodhound-bloodhound"; then 
         echo "Containers are live. Bringing up Firefox"
         firefox "http://127.0.0.1:8085/ui/login" &
@@ -112,4 +116,11 @@ else
         firefox "http://127.0.0.1:8085/ui/login" &
 fi
 ```
+
+```
+chmod +x /home/kali/.local/bin/bloodhound
+hash -r
+```
+
+
 
