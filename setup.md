@@ -59,6 +59,8 @@ docker compose up -d
 http://127.0.0.1:8085/ui/explore
 ```
 
+Done! Only go to the docker section if you haven't installed Docker on Kali yet.
+
 # Installing Docker on Kali
 
 ```
