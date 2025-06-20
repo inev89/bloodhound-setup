@@ -67,3 +67,11 @@ Done! Only go to the docker section if you haven't installed Docker on Kali yet.
 sudo apt install -y docker.io
 sudo apt install docker-compose
 ```
+
+## Add current user to docker group
+
+```
+sudo usermod -aG docker $USER
+newgrp docker
+```
+
