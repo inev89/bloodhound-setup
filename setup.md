@@ -59,9 +59,11 @@ docker compose up -d
 http://127.0.0.1:8085/ui/explore
 ```
 
-Done! Only go to the docker section if you haven't installed Docker on Kali yet.
+Done!
 
 # Installing Docker on Kali
+> [!NOTE]
+> This is only required if you are unable to run ./bloodhound-cli. Try to use sudo with it first, if it doesn't work then proceed.
 
 ```
 sudo apt install -y docker.io
