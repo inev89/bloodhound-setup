@@ -79,3 +79,23 @@ sudo usermod -aG docker $USER
 newgrp docker
 ```
 
+# Troubleshooting
+If bloodhound is not running, confirm it with
+
+```
+docker ps
+```
+
+Once you confirmed it is not running, you need to restart the docker containers.
+
+```
+cd ~/bloodhound
+docker compose restart
+```
+
+If those containers do not exist, you can create new ones with
+```
+cd ~/bloodhound
+docker compose up -d
+```
+
