@@ -120,6 +120,7 @@ fi
 ```
 chmod +x /home/kali/.local/bin/bloodhound
 hash -r
+bloodhound
 ```
 
 
